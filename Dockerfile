@@ -33,7 +33,7 @@ RUN apk add --update --no-cache --virtual curldeps g++ make perl && \
 # install git, sed
 RUN apk add --update --no-cache git sed
 # install godoc
-RUN	go get -u -v golang.org/x/tools/cmd/godoc
+RUN go get -u -v golang.org/x/tools/cmd/godoc
 
 # entrypoint
 ENTRYPOINT ["/usr/bin/curl"]
